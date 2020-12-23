@@ -13,3 +13,5 @@ COPY ["package.json", "package-lock.json*", "./"]
 COPY . .
 
 CMD [ "node", "scripts/start.js" ]
+
+RUN npm install -g @capevace/mission-control @capevace/single-sign-on
